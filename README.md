@@ -87,11 +87,11 @@
 
 ## 📊 Serial Output Example
 
-```text
 Current Temperature: 26.40 °C, Threshold: 25.00 °C
 Current Temperature: 27.10 °C, Threshold: 25.00 °C
 Threshold updated to: 26.50 °C
 
+---
 ## 🧩 Task Overview
 
 | Task Name     | Functionality                             |
