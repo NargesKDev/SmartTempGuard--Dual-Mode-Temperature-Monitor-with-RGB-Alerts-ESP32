@@ -1,8 +1,5 @@
 # SmartTempGuard 🌡️🔴🟢🔵  
 **A Dual-Mode ESP32 Temperature Monitoring System with RGB LED Feedback**
-
-<img src="image/board.jpg" alt="ESP32 Board Setup" width="500"/>
-
 ## 🚀 Overview
 
 **SmartTempGuard** is an ESP32-based embedded system that monitors ambient temperature using an analog temperature sensor and visually represents the result using RGB LEDs. It features:
@@ -114,3 +111,5 @@ Threshold updated to: 26.50 °C
 6. Use the **button** to toggle between **Monitor** and **Set** mode.
 
 ---
+<img src="image/board.jpg" alt="ESP32 Board Setup" width="500"/>
+
