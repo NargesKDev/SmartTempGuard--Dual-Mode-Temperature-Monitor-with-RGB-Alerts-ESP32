@@ -1,6 +1,6 @@
-# SmartTempGuard 🌡️🔴🟢🔵  
+# SmartTempGuard 
 **A Dual-Mode ESP32 Temperature Monitoring System with RGB LED Feedback**
-## 🚀 Overview
+## Overview
 
 **SmartTempGuard** is an ESP32-based embedded system that monitors ambient temperature using an analog temperature sensor and visually represents the result using RGB LEDs. It features:
 
@@ -12,18 +12,18 @@
 
 ---
 
-## 📦 Features
+## Features
 
-- 🧠 **Monitor Mode**: Continuously reads temperature and displays status via RGB LED 1.
-- ✍️ **Set Mode**: Allows user to set a custom temperature threshold via Serial.
-- 🔁 **FreeRTOS Multi-tasking**: Concurrent tasks for temperature, button, mode LED, and Serial.
-- 🔵🔴🟢 **Dual RGB LEDs**:
+- **Monitor Mode**: Continuously reads temperature and displays status via RGB LED 1.
+- **Set Mode**: Allows user to set a custom temperature threshold via Serial.
+- **FreeRTOS Multi-tasking**: Concurrent tasks for temperature, button, mode LED, and Serial.
+- **Dual RGB LEDs**:
   - LED1: Temperature status.
   - LED2: Current mode.
 
 ---
 
-## 🧰 Hardware Requirements
+## Hardware Requirements
 
 - **ESP32** development board
 - Analog temperature sensor (e.g., TMP36) connected to **GPIO32**
@@ -35,7 +35,7 @@
 
 ---
 
-## ⚙️ Software Requirements
+##  Software Requirements
 
 - [Arduino IDE](https://www.arduino.cc/en/software) or [PlatformIO](https://platformio.org/)
 - ESP32 board support via Board Manager
@@ -43,7 +43,7 @@
 
 ---
 
-## 📐 Wiring Diagram
+## Wiring Diagram
 
 | Component         | ESP32 Pin |
 |------------------|-----------|
@@ -58,14 +58,14 @@
 
 ---
 
-## 🧪 Operating Modes
+##  Operating Modes
 
 ### 1. Monitor Mode
 - Reads temperature every second.
 - RGB LED 1 indicates:
-  - 🔵 **Blue** = Cold (below threshold - 1.5 °C)
-  - 🟢 **Green** = Comfort (within ±1.5 °C of threshold)
-  - 🔴 **Red** = Hot (above threshold + 1.5 °C)
+  -  **Blue** = Cold (below threshold - 1.5 °C)
+  -  **Green** = Comfort (within ±1.5 °C of threshold)
+  -  **Red** = Hot (above threshold + 1.5 °C)
 
 ### 2. Set Mode
 - Toggle mode using the button.
@@ -74,7 +74,7 @@
 
 ---
 
-## 🧵 Serial Commands
+## Serial Commands
 
 - While in **Set Mode**, type a number (e.g., `26.5`) and press **Enter**.
 - Valid input range: **-100°C to 150°C**
@@ -82,14 +82,14 @@
 
 ---
 
-## 📊 Serial Output Example
+## Serial Output Example
 
 Current Temperature: 26.40 °C, Threshold: 25.00 °C  
 Current Temperature: 27.10 °C, Threshold: 25.00 °C  
 Threshold updated to: 26.50 °C  
 
 ---
-## 🧩 Task Overview
+## Task Overview
 
 | Task Name     | Functionality                             |
 |---------------|--------------------------------------------|
@@ -101,7 +101,7 @@ Threshold updated to: 26.50 °C
 
 ---
 
-## 🧪 How to Use
+## How to Use
 
 1. Clone or download this repository.
 2. Open the project in **Arduino IDE** or **PlatformIO**.
